@@ -9,19 +9,20 @@
 /* Begin PBXBuildFile section */
 		EF0BA31A1F34A50C0079955E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA3191F34A50C0079955E /* AppDelegate.swift */; };
 		EF0BA31C1F34A50C0079955E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA31B1F34A50C0079955E /* ViewController.swift */; };
-		EF0BA31F1F34A50C0079955E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA31D1F34A50C0079955E /* Main.storyboard */; };
-		EF0BA3211F34A50C0079955E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA3201F34A50C0079955E /* Assets.xcassets */; };
-		EF0BA3241F34A50C0079955E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA3221F34A50C0079955E /* LaunchScreen.storyboard */; };
+		EF0BA3331F34A7580079955E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA32D1F34A7580079955E /* Assets.xcassets */; };
+		EF0BA3341F34A7580079955E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA32F1F34A7580079955E /* LaunchScreen.storyboard */; };
+		EF0BA3351F34A7580079955E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA3311F34A7580079955E /* Main.storyboard */; };
+		EF0BA3381F34A7790079955E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA3371F34A7790079955E /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF0BA3161F34A50C0079955E /* viper-ios-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "viper-ios-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0BA3191F34A50C0079955E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF0BA31B1F34A50C0079955E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EF0BA31E1F34A50C0079955E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EF0BA3201F34A50C0079955E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EF0BA3231F34A50C0079955E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EF0BA3251F34A50C0079955E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0BA32D1F34A7580079955E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF0BA3301F34A7580079955E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF0BA3321F34A7580079955E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF0BA3371F34A7790079955E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +55,46 @@
 		EF0BA3181F34A50C0079955E /* viper-ios-example */ = {
 			isa = PBXGroup;
 			children = (
-				EF0BA3191F34A50C0079955E /* AppDelegate.swift */,
 				EF0BA31B1F34A50C0079955E /* ViewController.swift */,
-				EF0BA31D1F34A50C0079955E /* Main.storyboard */,
-				EF0BA3201F34A50C0079955E /* Assets.xcassets */,
-				EF0BA3221F34A50C0079955E /* LaunchScreen.storyboard */,
-				EF0BA3251F34A50C0079955E /* Info.plist */,
+				EF0BA32B1F34A6E10079955E /* Application */,
+				EF0BA32C1F34A7580079955E /* Resources */,
+				EF0BA3361F34A7790079955E /* Supporting Files */,
 			);
 			path = "viper-ios-example";
+			sourceTree = "<group>";
+		};
+		EF0BA32B1F34A6E10079955E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA3191F34A50C0079955E /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EF0BA32C1F34A7580079955E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA32E1F34A7580079955E /* Storyboards */,
+				EF0BA32D1F34A7580079955E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF0BA32E1F34A7580079955E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA32F1F34A7580079955E /* LaunchScreen.storyboard */,
+				EF0BA3311F34A7580079955E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EF0BA3361F34A7790079955E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA3371F34A7790079955E /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +157,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF0BA3241F34A50C0079955E /* LaunchScreen.storyboard in Resources */,
-				EF0BA3211F34A50C0079955E /* Assets.xcassets in Resources */,
-				EF0BA31F1F34A50C0079955E /* Main.storyboard in Resources */,
+				EF0BA3381F34A7790079955E /* Info.plist in Resources */,
+				EF0BA3351F34A7580079955E /* Main.storyboard in Resources */,
+				EF0BA3331F34A7580079955E /* Assets.xcassets in Resources */,
+				EF0BA3341F34A7580079955E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,20 +179,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EF0BA31D1F34A50C0079955E /* Main.storyboard */ = {
+		EF0BA32F1F34A7580079955E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EF0BA31E1F34A50C0079955E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EF0BA3221F34A50C0079955E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF0BA3231F34A50C0079955E /* Base */,
+				EF0BA3301F34A7580079955E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF0BA3311F34A7580079955E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF0BA3321F34A7580079955E /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -262,7 +296,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97CJYDC5AL;
-				INFOPLIST_FILE = "viper-ios-example/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/viper-ios-example/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.saritasa.enterprise.viper-ios-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,7 +310,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97CJYDC5AL;
-				INFOPLIST_FILE = "viper-ios-example/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/viper-ios-example/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.saritasa.enterprise.viper-ios-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
