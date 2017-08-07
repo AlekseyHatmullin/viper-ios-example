@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Countries View Controller-->
+        <scene sceneID="1hR-qI-kqd">
+            <objects>
+                <viewController storyboardIdentifier="CountriesViewController" id="6ue-Fw-U3Y" customClass="CountriesViewController" customModule="viper_ios_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xam-NX-HKO"/>
+                        <viewControllerLayoutGuide type="bottom" id="h9u-td-tue"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kfq-aV-HcE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data for displaying" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTC-dd-c6h">
+                                <rect key="frame" x="69.5" y="319" width="235" height="29.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HRC-9m-2Or">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CountryTableViewCell" rowHeight="45" id="vWw-KG-k9T" customClass="CountryTableViewCell" customModule="viper_ios_example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vWw-KG-k9T" id="BZi-Vk-tfN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NR8-L5-9ph">
+                                                    <rect key="frame" x="12" y="12" width="351" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBw-BD-Iwd">
+                                                    <rect key="frame" x="0.0" y="44" width="375" height="1"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="mgq-SD-23C"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="mBw-BD-Iwd" secondAttribute="bottom" id="1Ev-vV-K5d"/>
+                                                <constraint firstItem="mBw-BD-Iwd" firstAttribute="leading" secondItem="BZi-Vk-tfN" secondAttribute="leading" id="4Od-do-f2i"/>
+                                                <constraint firstAttribute="bottom" secondItem="NR8-L5-9ph" secondAttribute="bottom" constant="12" id="4mm-pn-hXd"/>
+                                                <constraint firstItem="NR8-L5-9ph" firstAttribute="top" secondItem="BZi-Vk-tfN" secondAttribute="top" constant="12" id="JHs-kC-V99"/>
+                                                <constraint firstAttribute="trailing" secondItem="NR8-L5-9ph" secondAttribute="trailing" constant="12" id="NzC-bV-TLF"/>
+                                                <constraint firstItem="NR8-L5-9ph" firstAttribute="leading" secondItem="BZi-Vk-tfN" secondAttribute="leading" constant="12" id="gD6-WD-855"/>
+                                                <constraint firstAttribute="trailing" secondItem="mBw-BD-Iwd" secondAttribute="trailing" id="ylS-EV-MJA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countryNameLabel" destination="NR8-L5-9ph" id="C8j-4m-pQy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6ue-Fw-U3Y" id="DNq-Tu-AU1"/>
+                                    <outlet property="delegate" destination="6ue-Fw-U3Y" id="gY8-sn-YaD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TTC-dd-c6h" firstAttribute="centerX" secondItem="Kfq-aV-HcE" secondAttribute="centerX" id="DrE-PO-h1P"/>
+                            <constraint firstItem="TTC-dd-c6h" firstAttribute="centerY" secondItem="Kfq-aV-HcE" secondAttribute="centerY" id="b7V-U1-c9I"/>
+                            <constraint firstItem="HRC-9m-2Or" firstAttribute="top" secondItem="Kfq-aV-HcE" secondAttribute="top" id="bZg-e1-DX1"/>
+                            <constraint firstAttribute="trailing" secondItem="HRC-9m-2Or" secondAttribute="trailing" id="chG-Sz-7ec"/>
+                            <constraint firstItem="h9u-td-tue" firstAttribute="top" secondItem="HRC-9m-2Or" secondAttribute="bottom" id="hPq-Ep-4rz"/>
+                            <constraint firstItem="HRC-9m-2Or" firstAttribute="leading" secondItem="Kfq-aV-HcE" secondAttribute="leading" id="yef-TW-Ot0"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="TTC-dd-c6h" id="D2D-nD-yzG"/>
+                        <outlet property="tableView" destination="HRC-9m-2Or" id="6gO-12-90h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2M-Jf-UW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-119.2" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>

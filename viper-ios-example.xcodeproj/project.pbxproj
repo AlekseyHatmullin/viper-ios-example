@@ -7,22 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F461F10037C3A3D2E099654 /* Pods_viper_ios_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4A97DCAEE4F09C5332B924 /* Pods_viper_ios_example.framework */; };
 		EF0BA31A1F34A50C0079955E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA3191F34A50C0079955E /* AppDelegate.swift */; };
 		EF0BA31C1F34A50C0079955E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA31B1F34A50C0079955E /* ViewController.swift */; };
 		EF0BA3331F34A7580079955E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA32D1F34A7580079955E /* Assets.xcassets */; };
 		EF0BA3341F34A7580079955E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA32F1F34A7580079955E /* LaunchScreen.storyboard */; };
-		EF0BA3351F34A7580079955E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA3311F34A7580079955E /* Main.storyboard */; };
 		EF0BA3381F34A7790079955E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA3371F34A7790079955E /* Info.plist */; };
+		EF0BA33C1F3840E20079955E /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA33B1F3840E20079955E /* RootContract.swift */; };
+		EF0BA33E1F3842210079955E /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA33D1F3842210079955E /* RootRouter.swift */; };
+		EF0BA3411F3849EB0079955E /* CountriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA3401F3849EB0079955E /* CountriesAPI.swift */; };
+		EF0BA34A1F384EA00079955E /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA3491F384EA00079955E /* Country.swift */; };
+		EF0BA34C1F38503C0079955E /* CountriesContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA34B1F38503C0079955E /* CountriesContract.swift */; };
+		EF0BA34E1F38504B0079955E /* ContriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA34D1F38504B0079955E /* ContriesRouter.swift */; };
+		EF0BA3501F3850580079955E /* CountriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA34F1F3850580079955E /* CountriesPresenter.swift */; };
+		EF0BA3521F3850610079955E /* CountriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA3511F3850610079955E /* CountriesInteractor.swift */; };
+		EF0BA3541F3850AF0079955E /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA3531F3850AF0079955E /* CountriesViewController.swift */; };
+		EF0BA3561F3852080079955E /* Countries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA3551F3852080079955E /* Countries.storyboard */; };
+		EF0BA35E1F38567B0079955E /* CountryDetailsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA35D1F38567B0079955E /* CountryDetailsContract.swift */; };
+		EF0BA3601F38568A0079955E /* CountryDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA35F1F38568A0079955E /* CountryDetailsInteractor.swift */; };
+		EF0BA3621F3856960079955E /* CountryDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA3611F3856960079955E /* CountryDetailsPresenter.swift */; };
+		EF0BA3641F3856A40079955E /* CountryDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA3631F3856A40079955E /* CountryDetailsRouter.swift */; };
+		EF0BA3661F3856BD0079955E /* CountryDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0BA3651F3856BD0079955E /* CountryDetails.storyboard */; };
+		EF0BA3681F3856D80079955E /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA3671F3856D80079955E /* CountryDetailsViewController.swift */; };
+		EF0BA36C1F387E150079955E /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA36B1F387E150079955E /* ViewProtocols.swift */; };
+		EF0BA36E1F38804F0079955E /* IndicatableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA36D1F38804F0079955E /* IndicatableViewExtension.swift */; };
+		EF0BA3701F388E2A0079955E /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BA36F1F388E2A0079955E /* CountryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C4A97DCAEE4F09C5332B924 /* Pods_viper_ios_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_viper_ios_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7917B525113F3BB04127CC94 /* Pods-viper-ios-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-ios-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viper-ios-example/Pods-viper-ios-example.debug.xcconfig"; sourceTree = "<group>"; };
+		E570942F6F872F83EA66BF8B /* Pods-viper-ios-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-ios-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-viper-ios-example/Pods-viper-ios-example.release.xcconfig"; sourceTree = "<group>"; };
 		EF0BA3161F34A50C0079955E /* viper-ios-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "viper-ios-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0BA3191F34A50C0079955E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF0BA31B1F34A50C0079955E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF0BA32D1F34A7580079955E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF0BA3301F34A7580079955E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EF0BA3321F34A7580079955E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF0BA3371F34A7790079955E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0BA33B1F3840E20079955E /* RootContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
+		EF0BA33D1F3842210079955E /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		EF0BA3401F3849EB0079955E /* CountriesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesAPI.swift; sourceTree = "<group>"; };
+		EF0BA3491F384EA00079955E /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		EF0BA34B1F38503C0079955E /* CountriesContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesContract.swift; sourceTree = "<group>"; };
+		EF0BA34D1F38504B0079955E /* ContriesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContriesRouter.swift; sourceTree = "<group>"; };
+		EF0BA34F1F3850580079955E /* CountriesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesPresenter.swift; sourceTree = "<group>"; };
+		EF0BA3511F3850610079955E /* CountriesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesInteractor.swift; sourceTree = "<group>"; };
+		EF0BA3531F3850AF0079955E /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		EF0BA3551F3852080079955E /* Countries.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Countries.storyboard; sourceTree = "<group>"; };
+		EF0BA35D1F38567B0079955E /* CountryDetailsContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailsContract.swift; sourceTree = "<group>"; };
+		EF0BA35F1F38568A0079955E /* CountryDetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailsInteractor.swift; sourceTree = "<group>"; };
+		EF0BA3611F3856960079955E /* CountryDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailsPresenter.swift; sourceTree = "<group>"; };
+		EF0BA3631F3856A40079955E /* CountryDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailsRouter.swift; sourceTree = "<group>"; };
+		EF0BA3651F3856BD0079955E /* CountryDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CountryDetails.storyboard; sourceTree = "<group>"; };
+		EF0BA3671F3856D80079955E /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
+		EF0BA36B1F387E150079955E /* ViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
+		EF0BA36D1F38804F0079955E /* IndicatableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatableViewExtension.swift; sourceTree = "<group>"; };
+		EF0BA36F1F388E2A0079955E /* CountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +70,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F461F10037C3A3D2E099654 /* Pods_viper_ios_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F37CFA23FFF75FDAFE2ADF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C4A97DCAEE4F09C5332B924 /* Pods_viper_ios_example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9856CA571BAF02DE92C735CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7917B525113F3BB04127CC94 /* Pods-viper-ios-example.debug.xcconfig */,
+				E570942F6F872F83EA66BF8B /* Pods-viper-ios-example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EF0BA30D1F34A50C0079955E = {
 			isa = PBXGroup;
 			children = (
 				EF0BA3181F34A50C0079955E /* viper-ios-example */,
 				EF0BA3171F34A50C0079955E /* Products */,
+				9856CA571BAF02DE92C735CA /* Pods */,
+				7F37CFA23FFF75FDAFE2ADF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +117,11 @@
 			children = (
 				EF0BA31B1F34A50C0079955E /* ViewController.swift */,
 				EF0BA32B1F34A6E10079955E /* Application */,
+				EF0BA3481F384E7C0079955E /* Models */,
+				EF0BA3391F382AED0079955E /* Modules */,
+				EF0BA33F1F3844B10079955E /* Network */,
+				EF0BA36A1F387DEA0079955E /* Extensions */,
+				EF0BA3691F387DB50079955E /* Protocols */,
 				EF0BA32C1F34A7580079955E /* Resources */,
 				EF0BA3361F34A7790079955E /* Supporting Files */,
 			);
@@ -84,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				EF0BA32F1F34A7580079955E /* LaunchScreen.storyboard */,
-				EF0BA3311F34A7580079955E /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -97,6 +161,164 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EF0BA3391F382AED0079955E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA33A1F382AED0079955E /* Root */,
+				EF0BA3421F384E430079955E /* Countries */,
+				EF0BA3571F38564D0079955E /* Country Details */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EF0BA33A1F382AED0079955E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA33B1F3840E20079955E /* RootContract.swift */,
+				EF0BA33D1F3842210079955E /* RootRouter.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		EF0BA33F1F3844B10079955E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA3401F3849EB0079955E /* CountriesAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EF0BA3421F384E430079955E /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA3431F384E430079955E /* Contract */,
+				EF0BA3441F384E430079955E /* Interactor */,
+				EF0BA3451F384E430079955E /* Presenter */,
+				EF0BA3461F384E430079955E /* Router */,
+				EF0BA3471F384E430079955E /* View */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		EF0BA3431F384E430079955E /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA34B1F38503C0079955E /* CountriesContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		EF0BA3441F384E430079955E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA3511F3850610079955E /* CountriesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EF0BA3451F384E430079955E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA34F1F3850580079955E /* CountriesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EF0BA3461F384E430079955E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA34D1F38504B0079955E /* ContriesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EF0BA3471F384E430079955E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA3551F3852080079955E /* Countries.storyboard */,
+				EF0BA3531F3850AF0079955E /* CountriesViewController.swift */,
+				EF0BA36F1F388E2A0079955E /* CountryTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF0BA3481F384E7C0079955E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA3491F384EA00079955E /* Country.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF0BA3571F38564D0079955E /* Country Details */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA3581F38564D0079955E /* Contract */,
+				EF0BA3591F38564D0079955E /* Interactor */,
+				EF0BA35A1F38564D0079955E /* Presenter */,
+				EF0BA35B1F38564D0079955E /* Router */,
+				EF0BA35C1F38564D0079955E /* View */,
+			);
+			path = "Country Details";
+			sourceTree = "<group>";
+		};
+		EF0BA3581F38564D0079955E /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA35D1F38567B0079955E /* CountryDetailsContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		EF0BA3591F38564D0079955E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA35F1F38568A0079955E /* CountryDetailsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EF0BA35A1F38564D0079955E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA3611F3856960079955E /* CountryDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EF0BA35B1F38564D0079955E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA3631F3856A40079955E /* CountryDetailsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EF0BA35C1F38564D0079955E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA3651F3856BD0079955E /* CountryDetails.storyboard */,
+				EF0BA3671F3856D80079955E /* CountryDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF0BA3691F387DB50079955E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA36B1F387E150079955E /* ViewProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EF0BA36A1F387DEA0079955E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF0BA36D1F38804F0079955E /* IndicatableViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +326,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF0BA3281F34A50C0079955E /* Build configuration list for PBXNativeTarget "viper-ios-example" */;
 			buildPhases = (
+				872EF9FA32B4DD2DF78121FC /* [CP] Check Pods Manifest.lock */,
 				EF0BA3121F34A50C0079955E /* Sources */,
 				EF0BA3131F34A50C0079955E /* Frameworks */,
 				EF0BA3141F34A50C0079955E /* Resources */,
+				633812D89B20CB11B44232C0 /* [CP] Embed Pods Frameworks */,
+				304824F117E837E02DC97C62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,7 +383,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF0BA3381F34A7790079955E /* Info.plist in Resources */,
-				EF0BA3351F34A7580079955E /* Main.storyboard in Resources */,
+				EF0BA3561F3852080079955E /* Countries.storyboard in Resources */,
+				EF0BA3661F3856BD0079955E /* CountryDetails.storyboard in Resources */,
 				EF0BA3331F34A7580079955E /* Assets.xcassets in Resources */,
 				EF0BA3341F34A7580079955E /* LaunchScreen.storyboard in Resources */,
 			);
@@ -166,13 +392,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		304824F117E837E02DC97C62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-viper-ios-example/Pods-viper-ios-example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		633812D89B20CB11B44232C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-viper-ios-example/Pods-viper-ios-example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		872EF9FA32B4DD2DF78121FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EF0BA3121F34A50C0079955E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0BA3411F3849EB0079955E /* CountriesAPI.swift in Sources */,
+				EF0BA36E1F38804F0079955E /* IndicatableViewExtension.swift in Sources */,
+				EF0BA33E1F3842210079955E /* RootRouter.swift in Sources */,
 				EF0BA31C1F34A50C0079955E /* ViewController.swift in Sources */,
+				EF0BA33C1F3840E20079955E /* RootContract.swift in Sources */,
+				EF0BA3621F3856960079955E /* CountryDetailsPresenter.swift in Sources */,
+				EF0BA34C1F38503C0079955E /* CountriesContract.swift in Sources */,
+				EF0BA3541F3850AF0079955E /* CountriesViewController.swift in Sources */,
+				EF0BA3641F3856A40079955E /* CountryDetailsRouter.swift in Sources */,
+				EF0BA3701F388E2A0079955E /* CountryTableViewCell.swift in Sources */,
+				EF0BA36C1F387E150079955E /* ViewProtocols.swift in Sources */,
+				EF0BA3601F38568A0079955E /* CountryDetailsInteractor.swift in Sources */,
+				EF0BA3501F3850580079955E /* CountriesPresenter.swift in Sources */,
+				EF0BA34A1F384EA00079955E /* Country.swift in Sources */,
+				EF0BA3521F3850610079955E /* CountriesInteractor.swift in Sources */,
 				EF0BA31A1F34A50C0079955E /* AppDelegate.swift in Sources */,
+				EF0BA34E1F38504B0079955E /* ContriesRouter.swift in Sources */,
+				EF0BA3681F3856D80079955E /* CountryDetailsViewController.swift in Sources */,
+				EF0BA35E1F38567B0079955E /* CountryDetailsContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,14 +476,6 @@
 				EF0BA3301F34A7580079955E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		EF0BA3311F34A7580079955E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF0BA3321F34A7580079955E /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -293,6 +576,7 @@
 		};
 		EF0BA3291F34A50C0079955E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7917B525113F3BB04127CC94 /* Pods-viper-ios-example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97CJYDC5AL;
@@ -307,6 +591,7 @@
 		};
 		EF0BA32A1F34A50C0079955E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E570942F6F872F83EA66BF8B /* Pods-viper-ios-example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97CJYDC5AL;
@@ -338,6 +623,7 @@
 				EF0BA32A1F34A50C0079955E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
