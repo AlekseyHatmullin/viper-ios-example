@@ -7,29 +7,39 @@
 //
 
 import UIKit
+import Kingfisher
+
 
 class CountryDetailsViewController: UIViewController {
+    
+    
+    // MARK: - UI Elements
+    
+    @IBOutlet fileprivate var countryNameLabel: UILabel!
+    @IBOutlet fileprivate var flagImageView: UIImageView!
+    
+    
+    // MARK: - Properties
+    
+    var presenter: CountryDetailsPresentation!
 
+    
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        presenter.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+
+// MARK: - View's protocols
+
+extension CountryDetailsViewController: CountryDetailsView {
+    
+    func showDetails(forCountry country: Country) {
+        countryNameLabel.text = country.name
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -73,6 +73,7 @@ extension CountriesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter.didSelectCountry(countries[indexPath.row])
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }

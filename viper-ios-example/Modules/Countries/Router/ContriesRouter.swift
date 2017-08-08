@@ -35,6 +35,8 @@ class CountriesRouter: CountriesWireframe {
     }
     
     func presentDetails(forCountry country: Country) {
+        let countryDetailsVC = CountryDetailsRouter.assembleModule(country)
+        viewController?.navigationController?.pushViewController(countryDetailsVC, animated: true)
     }
     
 }

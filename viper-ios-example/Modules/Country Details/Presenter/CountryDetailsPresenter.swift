@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+
+class CountryDetailsPresenter: CountryDetailsPresentation {
+    
+    // MARK: - Properties
+    
+    weak var view: CountryDetailsView?
+    var wireframe: CountryDetailsWireframe!
+    var country: Country!
+    
+    
+    // MARK: - Functions
+    
+    func viewDidLoad() {
+        view?.showDetails(forCountry: country)
+    }
+    
+}
