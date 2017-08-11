@@ -22,6 +22,7 @@ protocol CountryDetailsPresentation: class {
     weak var view: CountryDetailsView? { get set }
     
     func viewDidLoad()
+    
 }
 
 protocol CountryDetailsWireframe: class {

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 
 class CountryDetailsViewController: UIViewController {
@@ -28,6 +29,12 @@ class CountryDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        navigationController?.heroNavigationAnimationType = .zoomOut
     }
 
 }

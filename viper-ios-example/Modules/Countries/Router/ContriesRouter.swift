@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 
 class CountriesRouter: CountriesWireframe {
@@ -20,6 +21,7 @@ class CountriesRouter: CountriesWireframe {
         let router = CountriesRouter()
         
         let navigation = UINavigationController(rootViewController: view)
+        navigation.isHeroEnabled = true
         
         view.presenter = presenter
         
@@ -36,6 +38,7 @@ class CountriesRouter: CountriesWireframe {
     
     func presentDetails(forCountry country: Country) {
         let countryDetailsVC = CountryDetailsRouter.assembleModule(country)
+        viewController?.navigationController?.heroNavigationAnimationType = .zoom
         viewController?.navigationController?.pushViewController(countryDetailsVC, animated: true)
     }
     
